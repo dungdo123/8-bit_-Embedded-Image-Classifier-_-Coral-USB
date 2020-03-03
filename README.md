@@ -11,6 +11,7 @@ Main requirements:
  - USB Coral Accelerator
  
 Methods:
+
  - Compress trained model by quantization aware training
      + set up quantization in training perior( build the model and insert into the graph fake nodes(min/max) for further quantization
      + Call it back after training, quantizing the weights of the model with learned min/max for each layer
@@ -18,6 +19,7 @@ Methods:
  - After having .tflite file with quantization, use edgetpu_compiler then you will have a freeze model which can run on Coral devices
  
  Results:
+ 
    All basic steps work well but the accuracy is not high. So it will be optimized. For higher accuracy, you should use Transfer learning technique, which is showed clearly in Coral documents. I will practice that technique and update to this respo when I have time
      
 References:
