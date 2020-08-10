@@ -1,4 +1,4 @@
-# Cats_Dogs_classification_CNN_examples
+# 8 bit embedded classifier run on coral usb
 Learn to train a CNN model, run it on Google colab and Coral Accelerator
 
 Introduction
